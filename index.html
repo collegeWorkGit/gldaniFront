@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gldani College Front End</title>
-    <link rel="icon" type="image/x-icon" href="./college_logo.png" />
+    <link rel="icon" type="image/x-icon" href="./logo.png" />
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body>
@@ -28,120 +28,479 @@
     </header>
     <div class="container">
       <h1 class="main-title">პრაქტიკული გამოცდების პანელი</h1>
-      <h2 class="sub-title">ვებგვერდის მართვის სისტემების (CMS) გამოყენება</h2>
-
-      <details>
-        <summary></summary>
-        <div class="content">
-          <h3>📝 დავალების არსი:</h3>
-          <ol>
-            <li>
-              გადმოწერეთ და დააინსტალირეთ ლოკალური სერვერი (მაგალითად: XAMPP).
-            </li>
-            <li>გაუშვით (Start) Apache და MySQL სერვისები.</li>
-            <li>
-              შედით phpMyAdmin-ის პანელში
-              (<code>http://localhost/phpmyadmin/</code>) და შექმენით ახალი
-              მონაცემთა ბაზა (Database) სახელწოდებით:
-              <strong>client_website_db</strong>. უზრუნველყავით კოდირების სწორი
-              ფორმატი (<code>utf8_general_ci</code> ან
-              <code>utf8mb4_unicode_ci</code>).
-            </li>
-            <li>
-              ოფიციალური საიტიდან (wordpress.org) გადმოწერეთ WordPress-ის
-              უახლესი ვერსია.
-            </li>
-            <li>
-              ამოაარქივეთ გადმოწერილი ფაილი და მოათავსეთ ლოკალური სერვერის
-              მთავარ დირექტორიაში (XAMPP-ის შემთხვევაში
-              <code>htdocs</code> ფოლდერში). ფოლდერს დაარქვით
-              <strong>my-project</strong>.
-            </li>
-            <li>
-              გახსენით ბრაუზერი, გადადით მისამართზე
-              <code>http://localhost/my-project/</code> და დაიწყეთ ინსტალაციის
-              პროცესი.
-            </li>
-            <li>
-              დააკავშირეთ CMS მე-3 ნაბიჯში შექმნილ მონაცემთა ბაზასთან (მიუთითეთ
-              ბაზის სახელი <strong>client_website_db</strong>, user:
-              <strong>root</strong>, პაროლი: <em>დატოვეთ ცარიელი</em>).
-            </li>
-            <li>
-              ინსტალაციის ფანჯარაში შეავსეთ შემდეგი მონაცემები:
-              <ul>
-                <li>
-                  <strong>საიტის სათაური (Site Title):</strong> ჩემი პირველი
-                  ვებგვერდი
-                </li>
-                <li>
-                  <strong>მომხმარებლის სახელი (Username):</strong> admin_student
-                  (ან თქვენი სახელი ინგლისურად)
-                </li>
-                <li>
-                  <strong>პაროლი (Password):</strong> ვინაიდან საიტი სატესტოა,
-                  პაროლად შეიყვანეთ ზუსტად იგივე სიტყვა, რაც მომხმარებლის
-                  სახელად მიუთითეთ (დაეთანხმეთ სუსტ პაროლს - Confirm use of weak
-                  password).
-                </li>
-                <li>
-                  <strong>ელ-ფოსტა:</strong> შეიყვანეთ თქვენი აქტიური ელ-ფოსტა.
-                </li>
-                <li>
-                  <strong>საძიებო სისტემის ხილვადობა:</strong> მონიშნეთ (Check)
-                  უჯრა, რათა საძიებო სისტემებმა არ მოახდინონ ამ საიტის
-                  ინდექსირება (რადგან საიტი სატესტოა).
-                </li>
-              </ul>
-            </li>
-            <li>
-              ინსტალაციის დასრულების შემდეგ შედით ადმინ პანელში
-              (<code>wp-admin</code>).
-            </li>
-            <li>
-              გადადით Settings -> General-ში და Timezone (დროის სარტყელი)
-              დააყენეთ <strong>UTC+4</strong> (ან Tbilisi).
-            </li>
-            <li>
-              გადადით Settings -> Permalinks-ში და ბმულების სტრუქტურა
-              გადაიყვანეთ <strong>"Post name"</strong> (პოსტის სახელი) ფორმატზე.
-            </li>
-          </ol>
-
-          <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
-          <p>
-            დაზიპული ვორდპრეს საქაღალდე + გამოექსპორტებული MySQL ბაზა - ორივე
-            ერთად მოაქციეთ ფოლდერში, დაარქვით ფოლდერს თქვენი სახელი და გვარი,
-            დაარქივეთ და ატვირთეთ მოწოდებულ დრაივის ლინკზე:<br /><br />
+      <div id="markup-exams">
+        <h2 class="sub-title">
+          ვებგვერდის მარკირება და სტილებით გაფორმება (HTML/CSS)
+        </h2>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <a href="./exams/markup/part1/index.html" target="_blank"
+              >📝 იხილეთ პირველი დავალება</a
+            >
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
             <a
-              href="https://drive.google.com/drive/folders/1A-CP4YTndeYmdvPSOI692Osy92Jol0rM?usp=drive_link"
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
               target="_blank"
               >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
             >
-          </p>
-        </div>
-      </details>
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <a href="./exams/markup/part2/index.html" target="_blank"
+              >📝 იხილეთ მეორე დავალება</a
+            >
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <a href="./exams/markup/part3/index.html" target="_blank"
+              >📝 იხილეთ მესამე დავალება</a
+            >
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+      </div>
 
-      <details>
-        <summary></summary>
-        <div class="content">
-          <p>გამოცდის დავალება და დეტალები ჯერ არ არის ხელმისაწვდომი.</p>
-        </div>
-      </details>
+      <div id="tailwind-exams">
+        <h2 class="sub-title">
+          ვებ გვერდის სტილიზაცია Sass-scss პრე პროცესორის და Tailwind
+          ფრეიმვორკის გამოყენებით
+        </h2>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <a href="./exams/tailwind/Sass/index.html" target="_blank"
+              >📝 იხილეთ პირველი დავალება</a
+            >
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <a href="./exams/tailwind/tailwindPart1/index.html" target="_blank"
+              >📝 იხილეთ მეორე დავალება</a
+            >
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <a href="./exams/tailwind/tailwindPart2/index.html" target="_blank"
+              >📝 იხილეთ მესამე დავალება</a
+            >
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+      </div>
 
-      <details>
-        <summary></summary>
-        <div class="content">
-          <p>გამოცდის დავალება და დეტალები ჯერ არ არის ხელმისაწვდომი.</p>
-        </div>
-      </details>
+      <div id="js-exams">
+        <h2 class="sub-title">
+          ვებგვერდის ინტერაქტიულობისა და ეფექტების შემუშავება JavaScript
+        </h2>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <h3>🔹 ს/შ 1: ცვლადები და პირობები (1 სთ)</h3>
+            <ol>
+              <li>
+                შექმენით მუდმივი (`const`) ცვლადი, რომელშიც შეინახავთ კომპანიის
+                ან თქვენი მომავალი პროფესიის სახელს;
+              </li>
+              <li>
+                შექმენით `let` ცვლადი სამუშაო საათებისა და საათობრივი
+                ანაზღაურებისთვის (მაგ. `let hours = 40; let rate = 15;`). ასევე
+                შექმენით ცვლადი ბონუსისთვის: `let bonus = 50;`
+              </li>
+              <li>
+                გამოთვალეთ ჯამური ხელფასი (საათები გამრავლებული ანაზღაურებაზე და
+                დამატებული ბონუსი) და შეინახეთ ახალ ცვლადში;
+              </li>
+              <li>
+                შექმენით `boolean` ტიპის ცვლადი (true/false) და თუ საბოლოო
+                ხელფასი 500-ზე მეტია - ცვლადი იყოს ჭეშმარიტი (true), თუ არადა
+                მცდარი (false).
+              </li>
+            </ol>
 
-      <details>
-        <summary></summary>
-        <div class="content">
-          <p>გამოცდის დავალება და დეტალები ჯერ არ არის ხელმისაწვდომი.</p>
-        </div>
-      </details>
+            <h3>🔹 ს/შ 3: სმარტფონების მაღაზია (ტექნიკა) (3 სთ)</h3>
+            <ol>
+              <li>შექმენით ცარიელი მასივი სახელად `phones`;</li>
+              <li>
+                შექმენით 4 განსხვავებული ტელეფონის ობიექტი, რომელსაც ექნება:
+                `brand, model, price, id, inStock`. სათითაოდ დაამატეთ ეს
+                ობიექტები `phones` მასივში `push` მეთოდის გამოყენებით; - შედეგი
+                დაბეჭდეთ კონსოლში;
+              </li>
+              <li>
+                მაღაზიაში გაიყიდა ბოლო ჩამატებული მოდელი, ამოაკელით ბოლოს
+                დამატებული ტელეფონი (მასივის ბოლოდან); - შედეგი დაბეჭდეთ
+                კონსოლში;
+              </li>
+              <li>
+                მაღაზიამ მიიღო ახალი მოდელები, შექმენით ახალი მასივი
+                `newPhones`, რომელშიც იქნება 2 ტელეფონის ობიექტი; - შედეგი
+                დაბეჭდეთ კონსოლში;
+              </li>
+              <li>
+                გააერთიანეთ `phones` და `newPhones` მასივები `concat` მეთოდის
+                გამოყენებით და შედეგი შეინახეთ ცალკე ცვლადში -> `updatedPhones`;
+                - შედეგი დაბეჭდეთ კონსოლში;
+              </li>
+              <li>
+                მომხმარებელს სურს მხოლოდ ის ტელეფონები, რომლებიც ფიზიკურად აქვთ
+                მაღაზიაში. გაფილტრეთ მასივი `inStock`-ით და დააბრუნეთ ახალი
+                მასივი კონსოლში;
+              </li>
+              <li>
+                მომხმარებელი ეძებს ტელეფონს, რომლის `id = 3`. იპოვეთ ეს
+                კონკრეტული ობიექტი და მისი ბრენდი და მოდელი დაბეჭდეთ კონსოლში.
+              </li>
+            </ol>
+            <p>
+              ℹ️
+              <em
+                >ამ დავალებების შესასრულებლად HTML სტრუქტურა არ არის საჭირო,
+                მუშაობთ სუფთა ჯავასკრიპტში და პასუხებს ამოწმებთ Console-ში.</em
+              >
+            </p>
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <h3>🔹 ს/შ 2: ყავის შეკვეთა (კაფე) (2 სთ)</h3>
+            <ol>
+              <li>შექმენით HTML ფორმა;</li>
+              <li>
+                ჩამოსაშლელი სია `select id='coffeeType'` - espresso, cappuccino,
+                latte;
+              </li>
+              <li>რიცხვითი ველი - ყავის ჭიქების რაოდენობისთვის;</li>
+              <li>ღილაკი - `id='orderCoffee'`</li>
+              <li>ცარიელი `div#result` - სადაც გამოვა შედეგი;</li>
+              <li>
+                JavaScript-ში შექმენით ფუნქცია `makeOrder()`; - ფუნქციის შიგნით
+                წაიკითხეთ ყავის ტიპი და რაოდენობა;
+              </li>
+              <li>
+                შეამოწმეთ რაოდენობა, თუ მეტია 0-ზე. თუ არ არის, გამოიტანეთ
+                ალერტი - "რაოდენობა უნდა იყოს 0-ზე მეტი";
+              </li>
+              <li>
+                დაადგინეთ ფასი `switch case`-ის გამოყენებით: espresso - 5,
+                cappuccino - 7, latte - 8;
+              </li>
+              <li>გამოთვალეთ შეკვეთის ჯამური ფასი (რაოდენობა * ფასი);</li>
+              <li>
+                `for` ციკლი გამოიყენეთ თითოეული ჭიქა ყავის მომზადების პროცესის
+                კონსოლში გამოსატანად (მაგ. მომხმარებელმა შეუკვეთა 3 ყავა,
+                კონსოლში გამოვიდეს - "ვამზადებთ ყავას 1", "ვამზადებთ ყავას 2",
+                "ვამზადებთ ყავას 3");
+              </li>
+              <li>
+                საბოლოოდ გამოიტანეთ `result` დივ-ში ტექსტი: "თქვენ შეუკვეთეთ X
+                ჭიქა ყავა და უნდა გადაიხადოთ Y ლარი".
+              </li>
+            </ol>
+
+            <h3>🔹 ს/შ 4: მომხმარებლის პროფილი და ტაიმერი (2 სთ)</h3>
+            <ol>
+              <li>
+                ვებგვერდის ჩატვირთვისას შეამოწმეთ `localStorage`-ში თუ არსებობს
+                სტუდენტის სახელი (`studentName`);
+              </li>
+              <li>
+                თუ სახელი არ მოიძებნა, prompt-ით სთხოვეთ შეიყვანოს სახელი
+                ინგლისურად და შეინახეთ ლოკალსთორიჯში;
+              </li>
+              <li>
+                შეყვანილი სახელის პირველი ასო-ბგერა გაზარდეთ (მაგ. daviti ->
+                Daviti);
+              </li>
+              <li>შექმენით ახალი თარიღის ობიექტი;</li>
+              <li>ამოიღეთ მიმდინარე საათი;</li>
+              <li>
+                შექმენით მისალმების ტექსტი: თუ საათი &lt; 12: "პროდუქტიული დილა,
+                [სახელი]", 12-დან 18-მდე: "დღის მთავარი დავალებები, [სახელი]",
+                სხვა შემთხვევაში: "საღამოს შეჯამება, [სახელი]";
+              </li>
+              <li>
+                შექმენით "Start Focus" (კონცენტრაციის დაწყება) და "Break"
+                (შესვენება) ღილაკები, შუაში `span`-ში ციფრი 0. Focus-ზე კლიკით
+                ციფრმა ყოველ 1 წამში იმატოს (რამდენი წამი იგულისხმება ფოკუსში),
+                Break-ზე კლიკით შეჩერდეს ათვლა;
+              </li>
+              <li>
+                კონსოლში გამოიტანეთ მონიტორის ეკრანის სიგანე და ბრაუზერის ენა.
+              </li>
+            </ol>
+
+            <h3>🛠️ საჭირო HTML/CSS სტრუქტურა ორივე დავალებისთვის:</h3>
+            <pre><code>&lt;!-- HTML სექცია --&gt;
+&lt;div class="task-box"&gt;
+  &lt;h2&gt;ყავის შეკვეთა (ს/შ 2)&lt;/h2&gt;
+  &lt;form id="coffeeForm"&gt;
+    &lt;select id="coffeeType"&gt;
+      &lt;option value="espresso"&gt;Espresso (5₾)&lt;/option&gt;
+      &lt;option value="cappuccino"&gt;Cappuccino (7₾)&lt;/option&gt;
+      &lt;option value="latte"&gt;Latte (8₾)&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;input type="number" id="quantity" placeholder="რაოდენობა"&gt;
+    &lt;button type="button" id="orderCoffee" onclick="makeOrder()"&gt;შეკვეთა&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;div id="result"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="task-box" style="margin-top: 20px;"&gt;
+  &lt;h2&gt;ფოკუსის ტაიმერი (ს/შ 4)&lt;/h2&gt;
+  &lt;div class="timer-controls"&gt;
+    &lt;button id="startBtn"&gt;Start Focus&lt;/button&gt;
+    &lt;span id="timerDisplay" style="font-size: 24px; font-weight: bold; margin: 0 15px;"&gt;0&lt;/span&gt;
+    &lt;button id="stopBtn"&gt;Break&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <pre><code>/* CSS სტილები */
+.task-box { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+form { display: flex; gap: 10px; margin-top: 15px; }
+input, select, button { padding: 10px; border-radius: 4px; border: 1px solid #ccc; }
+button { background-color: #3498db; color: white; cursor: pointer; border: none; }
+#result { margin-top: 15px; font-weight: bold; color: #2c3e50; }</code></pre>
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <h3>🔹 ს/შ 5: საყიდლების სია (Shopping List) - 3სთ</h3>
+            <ol>
+              <li>
+                შექმენით HTML სტრუქტურა:
+                <ul>
+                  <li>h1 კლასით shop-title (მაგ. "ჩემი საყიდლები");</li>
+                  <li>input ველი id-ით itemInput (პროდუქტის ჩასაწერად);</li>
+                  <li>ღილაკი id-ით addBtn (ტექსტით "დამატება");</li>
+                  <li>ცარიელი სია ul id-ით shopList;</li>
+                </ul>
+              </li>
+              <li>
+                ჯავასკრიპტში შექმენით ცვლადები და აირჩიეთ ეს ელემენტები: სათაური
+                querySelector-ით, დანარჩენი ელემენტები getElementById-ით;
+              </li>
+              <li>
+                სათაურს ტექსტის ფერი შეუცვალეთ ჯავასკრიპტიდან (მაგალითად,
+                მწვანე);
+              </li>
+              <li>
+                შექმენით ფუნქცია addItem(); input ველიდან ამოღებული მნიშვნელობა
+                (.value) "დაიჭირეთ" ფუნქციაში;
+              </li>
+              <li>
+                ჯავასკრიპტით შექმენით li ელემენტი და ჩაწერეთ მასში ის ტექსტი,
+                რაც მომხმარებელმა შეიყვანა input-ში;
+              </li>
+              <li>
+                addBtn-ზე კლიკისას დაამატეთ ეს li ელემენტი ცარიელ სიაში
+                (appendChild-ით) და გამოიტანეთ ალერტი - "პროდუქტი წარმატებით
+                დაემატა";
+              </li>
+              <li>გაასუფთავეთ input ველი li-ს დამატების შემდეგ.</li>
+            </ol>
+
+            <h3>🛠️ საჭირო HTML/CSS სტრუქტურა:</h3>
+            <pre><code>&lt;!-- HTML სექცია --&gt;
+&lt;div class="shopping-container"&gt;
+  &lt;h1 class="shop-title"&gt;ჩემი საყიდლები&lt;/h1&gt;
+  
+  &lt;div class="input-section"&gt;
+    &lt;input type="text" id="itemInput" placeholder="შეიყვანეთ პროდუქტი..."&gt;
+    &lt;button id="addBtn" onclick="addItem()"&gt;დამატება&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;ul id="shopList"&gt;
+    &lt;!-- აქ ჩაიყრება ახალი პროდუქტები JS-დან --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+            <pre><code>/* CSS სტილები */
+.shopping-container { max-width: 400px; background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #eee; }
+.input-section { display: flex; gap: 10px; margin: 15px 0; }
+#itemInput { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+#addBtn { padding: 10px 20px; background: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer; }
+#shopList { list-style-position: inside; margin-top: 15px; }
+#shopList li { padding: 8px; border-bottom: 1px solid #f1f1f1; }</code></pre>
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary></summary>
+          <div class="content">
+            <h3>🔹 ს/შ 6 - 2სთ</h3>
+            <ol>
+              <li>
+                შექმენით ფუნქცია (მაგალითად `fetchUsers()`), რომელიც `fetch`
+                მეთოდის გამოყენებით წამოიღებს იუზერების მასივს შემდეგი ლინკიდან:
+                `https://jsonplaceholder.typicode.com/users`
+              </li>
+              <li>წამოღებული მონაცემები გადააკეთეთ `.json()` ფორმატში;</li>
+              <li>
+                ჯავასკრიპტით აირჩიეთ ცარიელი div, რომლის აიდია `usersBox`;
+              </li>
+              <li>
+                `for` ან `forEach` ციკლის გამოყენებით გადაურბინეთ წამოღებულ
+                მასივს და თითოეული იუზერისთვის შექმენით ქვემოთ მოცემული HTML
+                სტრუქტურა.
+              </li>
+              <li>ჩასვით ეს სტრუქტურა `usersBox`-ში.</li>
+              <li>
+                შექმენით მეორე ფუნქცია `deleteUser(id)`. ეს ფუნქცია უნდა
+                იძახებდეს x ღილაკზე დაკლიკებისას;
+              </li>
+              <li>
+                `deleteUser` ფუნქციის შიგნით გამოიყენეთ `fetch` და CRUD-ის
+                DELETE მეთოდი შემდეგ ლინკზე:
+                `https://jsonplaceholder.typicode.com/users/{id}` (სადაც {id}
+                არის იმ იუზერის აიდი, რომლის წაშლაც გვინდა).
+              </li>
+              <li>
+                თუ სერვერმა წარმატებით წაშალა მონაცემი (`response.ok`),
+                ჯავასკრიპტით იპოვეთ წასაშლელი div (მაგ. `id="user-1"`) და
+                გააქრეთ ის ეკრანიდან (`.remove()` მეთოდით).
+              </li>
+            </ol>
+
+            <h3>🛠️ საჭირო HTML/CSS სტრუქტურა:</h3>
+            <pre><code>&lt;!-- HTML სექცია --&gt;
+&lt;div id="usersBox"&gt;
+  &lt;!-- JS-ში შექმნილი იუზერის ბარათის სუფთა HTML ნიმუში --&gt;
+  &lt;div class="user-card" id="user-1"&gt;
+    &lt;button class="delete-btn"&gt;X&lt;/button&gt;
+    
+    &lt;h3&gt;Leanne Graham&lt;/h3&gt;
+    
+    &lt;p&gt;&lt;strong&gt;Username:&lt;/strong&gt; Bret&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; Sincere@april.biz&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; 1-770-736-8031&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Website:&lt;/strong&gt; hildegard.org&lt;/p&gt;
+
+    &lt;div class="info-section"&gt;
+      &lt;h4 class="address-title"&gt;მისამართი:&lt;/h4&gt;
+      &lt;p&gt;&lt;strong&gt;City:&lt;/strong&gt; Gwenborough&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Street:&lt;/strong&gt; Kulas Light, Apt. 556&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="info-section"&gt;
+      &lt;h4 class="company-title"&gt;კომპანია:&lt;/h4&gt;
+      &lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; Romaguera-Crona&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Slogan:&lt;/strong&gt; "Multi-layered neural-net"&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <pre><code>/* CSS სტილები */
+#usersBox { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.user-card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative; border: 1px solid #e2e8f0; }
+.delete-btn { position: absolute; top: 15px; right: 15px; background: #e53e3e; color: white; border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; }
+.info-section { margin-top: 15px; padding-top: 15px; border-top: 1px solid #edf2f7; }
+.address-title { color: #3182ce; font-size: 14px; margin-bottom: 5px; }
+.company-title { color: #38a169; font-size: 14px; margin-bottom: 5px; }</code></pre>
+            <h3>📁 ჩასაბარებელი მტკიცებულებები:</h3>
+            <p>
+              თქვენი ნამუშევარი ფოლდერი დაზიპეთ, დაარქვით თქვენი სახელი და გვარი
+              და ატვირთეთ ქვემოთ მოცემულ ბმულზე
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/160QrNyYl4ZmGcPuQ1wyN5vS3rWkirOVs?usp=drive_link"
+              target="_blank"
+              >🔗 გამოცდის ჩასაბარებელი ლინკი (Google Drive)</a
+            >
+          </div>
+        </details>
+      </div>
     </div>
     <script type="module" src="./src/js/script.js"></script>
   </body>

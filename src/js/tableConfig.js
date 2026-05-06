@@ -2,25 +2,27 @@
 export function tableConfig() {
   // Modules
   const modules = {
-    cms: {
-      module: "ვებგვერდის მართვის სისტემების (CMS) გამოყენება",
+    js: {
+      module:
+        "ვებგვერდის ინტერაქტიულობისა და ეფექტების შექმნა javaScript-ის საშუალებით",
       teacher: "ლევან ჭუმბურიძე",
       room: 14,
-      alternateRoom: 305,
     },
-    // Add more modules as needed:
-    // webdev: {
-    //   module: "Web Development",
-    //   teacher: "Teacher Name",
-    //   room: 15,
-    //   alternateRoom: 306,
-    // }
+    // Add more modules:
+    tailwindCss: {
+      module: "Web Development",
+      teacher: "Teacher Name",
+      room: 15,
+    },
   };
 
   // Schedule: specify which modules appear on which days/periods
   // periods can be a single number or an array of numbers
   const schedule = [
-    { day: "პარასკევი", periods: [2, 3, 4], moduleId: "cms" },
+    { day: "ორშაბათი", periods: [2, 3, 4, 5], moduleId: "js" },
+    { day: "ოთხშაბათი", periods: [5, 6, 7, 8], moduleId: "js" },
+    { day: "ხუთშაბათი", periods: [3, 4, 5], moduleId: "js" },
+    { day: "პარასკევი", periods: [3, 4], moduleId: "js" },
     // Add more schedule entries as needed:
     // { day: "ოთხშაბათი", periods: 3, moduleId: "webdev" }, // single period
     // { day: "სამშაბათი", periods: [1, 2, 5], moduleId: "another" }, // multiple periods
