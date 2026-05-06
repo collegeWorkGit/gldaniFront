@@ -29,6 +29,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.06);
   border: 1px solid rgba(148, 163, 184, 0.18);
+  overflow-x: auto;
 }
 .schedule-table {
   width: 100%;
@@ -283,4 +284,48 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .container > div {
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .main-title {
+    font-size: 22px;
+  }
+  .sub-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  summary {
+    padding: 12px;
+    font-size: 15px;
+  }
+  details[open] .content {
+    padding: 15px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 15px 0 10px 0;
+  }
+  ul, ol {
+    margin-left: 15px;
+  }
+  pre {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .table-container {
+    padding: 12px;
+    border-radius: 12px;
+  }
+  .schedule-table th,
+  .schedule-table td {
+    padding: 4px;
+    font-size: 11px;
+  }
 }
