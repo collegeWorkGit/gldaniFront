@@ -10,13 +10,13 @@ export function tableConfig() {
     },
     // Add more modules:
     tailwindCss: {
-      module: "Web Development",
-      teacher: "Teacher Name",
-      room: 15,
+      module: "Tailwind CSS",
+      teacher: "ლევან ჭუმბურიძე",
+      room: 14,
     },
   };
 
-  // Schedule: specify which modules appear on which days/periods
+  // Schedule:
   // periods can be a single number or an array of numbers
   const schedule = [
     { day: "ორშაბათი", periods: [2, 3, 4, 5], moduleId: "js" },
@@ -203,7 +203,7 @@ export function tableConfig() {
       const isHidden = allRows[0].classList.contains("table-row-hidden");
       headerCell.textContent = isHidden
         ? "📅 ცხრილი (დააჭირეთ გასახსნელად)"
-        : "📅 ცხრილი (დააჭირეთ დასახურავად)";
+        : "📅 ცხრილი (დააჭირეთ დასახურად)";
     });
   }
 
