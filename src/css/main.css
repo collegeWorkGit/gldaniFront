@@ -13,6 +13,37 @@ body {
   color: #333;
   padding: 30px;
 }
+
+/* floating label  */
+.floating-label {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(90deg, var(--dark-red) 0%, var(--light-red) 100%);
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(216, 141, 141, 0.3);
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-label:hover {
+  box-shadow: 0 8px 25px rgba(196, 85, 85, 0.4);
+  transform: translateY(-2px);
+}
+
+.floating-label a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.floating-label a:hover {
+  text-decoration: underline;
+}
+/* content  */
 .container {
   max-width: 1170px;
   margin: 0 auto;
