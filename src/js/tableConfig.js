@@ -24,13 +24,14 @@ export function tableConfig() {
   // Schedule:
   // periods can be a single number or an array of numbers
   const schedule = [
-    { day: "ორშაბათი", periods: [6, 7, 8, 9], moduleId: "js" },
+    { day: "ორშაბათი", periods: [6, 7, 8, 9], moduleId: "typescript" },
+    // { day: "სამშაბათი", periods: [1, 2, 5], moduleId: "another" }, // multiple periods
     // { day: "ოთხშაბათი", periods: [5, 6, 7, 8], moduleId: "js" },
     { day: "ხუთშაბათი", periods: [1, 2, 3], moduleId: "typescript" },
     // { day: "პარასკევი", periods: [3, 4], moduleId: "js" },
+
     // Add more schedule entries as needed:
     // { day: "ოთხშაბათი", periods: 3, moduleId: "webdev" }, // single period
-    // { day: "სამშაბათი", periods: [1, 2, 5], moduleId: "another" }, // multiple periods
   ];
 
   // Time slots
