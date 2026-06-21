@@ -6,18 +6,18 @@ export function tableConfig() {
       module:
         "ვებგვერდის ინტერაქტიულობისა და ეფექტების შექმნა javaScript-ის საშუალებით",
       teacher: "ლევან ჭუმბურიძე",
-      room: 14,
+      room: 16,
     },
     // Add more modules:
     tailwindCss: {
       module: "Tailwind CSS",
       teacher: "ლევან ჭუმბურიძე",
-      room: 14,
+      room: 16,
     },
     typescript: {
       module: "დინამიური ვებგვერდის  შექმნა typescript-ის საშუალებით",
       teacher: "ლევან ჭუმბურიძე",
-      room: 15,
+      room: 16,
     },
   };
 
@@ -27,7 +27,7 @@ export function tableConfig() {
     { day: "ორშაბათი", periods: [6, 7, 8, 9], moduleId: "typescript" },
     // { day: "სამშაბათი", periods: [1, 2, 5], moduleId: "another" }, // multiple periods
     // { day: "ოთხშაბათი", periods: [5, 6, 7, 8], moduleId: "js" },
-    { day: "ხუთშაბათი", periods: [1, 2, 3], moduleId: "typescript" },
+    { day: "ხუთშაბათი", periods: [1, 2, 3, 4], moduleId: "typescript" },
     // { day: "პარასკევი", periods: [3, 4], moduleId: "js" },
 
     // Add more schedule entries as needed:
