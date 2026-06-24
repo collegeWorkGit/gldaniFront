@@ -28,8 +28,7 @@ export function tableConfig() {
     // { day: "სამშაბათი", periods: [1, 2, 5], moduleId: "another" }, // multiple periods
     // { day: "ოთხშაბათი", periods: [5, 6, 7, 8], moduleId: "js" },
     { day: "ხუთშაბათი", periods: [1, 2, 3, 4], moduleId: "typescript" },
-    // { day: "პარასკევი", periods: [3, 4], moduleId: "js" },
-
+    { day: "პარასკევი", periods: [6, 7], moduleId: "typescript" },
     // Add more schedule entries as needed:
     // { day: "ოთხშაბათი", periods: 3, moduleId: "webdev" }, // single period
   ];
