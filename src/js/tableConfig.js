@@ -24,6 +24,11 @@ export function tableConfig() {
       teacher: "ლევან ჭუმბურიძე",
       room: 16,
     },
+    AI: {
+      module: "ხელოვნური ინტელექტის გამოყენება",
+      teacher: "ლევან ჭუმბურიძე",
+      room: 16,
+    },
   };
   // Schedule:
   // periods can be a single number or an array of numbers
